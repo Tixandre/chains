@@ -44122,8 +44122,8 @@
   "slip44": 1,
   "icon": "ntity",
   "explorers": [{
-    "name": "Ntity Haradev Explorer",
-    "url": "https://explorer.ntity.io/NTTH",
+    "name": "Ntity Haradev Blockscout",
+    "url": "https://blockscout.haradev.com",
     "icon": "ntity",
     "standard": "EIP3091"
   }]
