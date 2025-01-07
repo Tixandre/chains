@@ -293,7 +293,7 @@
   "name": "Flare Mainnet",
   "chain": "FLR",
   "icon": "flare",
-  "rpc": ["https://flare-api.flare.network/ext/C/rpc", "https://flare.rpc.thirdweb.com", "https://flare-bundler.etherspot.io", "https://rpc.ankr.com/flare", "https://01-gravelines-003-01.rpc.tatum.io/ext/bc/C/rpc", "https://01-vinthill-003-02.rpc.tatum.io/ext/bc/C/rpc", "https://rpc.ftso.au/flare", "https://flare.enosys.global/ext/C/rpc", "https://flare.solidifi.app/ext/C/rpc"],
+  "rpc": ["https://flare-api.flare.network/ext/C/rpc", "https://flare.rpc.thirdweb.com", "https://flare-bundler.etherspot.io", "https://rpc.ankr.com/flare", "https://01-gravelines-003-01.rpc.tatum.io/ext/bc/C/rpc", "https://01-vinthill-003-02.rpc.tatum.io/ext/bc/C/rpc", "https://rpc.au.cc/flare", "https://flare.enosys.global/ext/C/rpc", "https://flare.solidifi.app/ext/C/rpc"],
   "features": [{
     "name": "EIP155"
   }, {
@@ -401,7 +401,7 @@
   "name": "Songbird Canary-Network",
   "chain": "SGB",
   "icon": "songbird",
-  "rpc": ["https://songbird-api.flare.network/ext/C/rpc", "https://01-gravelines-006-01.rpc.tatum.io/ext/bc/C/rpc", "https://01-vinthill-006-02.rpc.tatum.io/ext/bc/C/rpc", "https://02-tokyo-006-03.rpc.tatum.io/ext/bc/C/rpc", "https://rpc.ftso.au/songbird", "https://songbird.enosys.global/ext/C/rpc", "https://songbird.solidifi.app/ext/C/rpc"],
+  "rpc": ["https://songbird-api.flare.network/ext/C/rpc", "https://01-gravelines-006-01.rpc.tatum.io/ext/bc/C/rpc", "https://01-vinthill-006-02.rpc.tatum.io/ext/bc/C/rpc", "https://02-tokyo-006-03.rpc.tatum.io/ext/bc/C/rpc", "https://rpc.au.cc/songbird", "https://songbird.enosys.global/ext/C/rpc", "https://songbird.solidifi.app/ext/C/rpc"],
   "features": [{
     "name": "EIP155"
   }, {
@@ -7048,8 +7048,7 @@
 }, {
   "name": "Firechain Mainnet",
   "chain": "FIRE",
-  "icon": "firechain",
-  "rpc": ["https://rpc-mainnet.thefirechain.com"],
+  "rpc": ["https://rpc-mainnet.thefirechain.com", "https://rpc-mainnet.firestation.io"],
   "faucets": [],
   "nativeCurrency": {
     "name": "Firechain",
@@ -7060,6 +7059,7 @@
   "shortName": "fire",
   "chainId": 529,
   "networkId": 529,
+  "icon": "firechain",
   "explorers": [],
   "status": "incubating"
 }, {
@@ -8650,7 +8650,7 @@
   "name": "Firechain zkEVM",
   "title": "Firechain zkEVM",
   "chain": "Firechain",
-  "rpc": ["https://rpc-zkevm.thefirechain.com"],
+  "rpc": ["https://rpc-zkevm.thefirechain.com", "https://rpc-zkevm.firestation.io"],
   "faucets": [],
   "nativeCurrency": {
     "name": "Ether",
@@ -8661,7 +8661,7 @@
   "shortName": "firechan-zkEVM",
   "chainId": 814,
   "networkId": 814,
-  "icon": "firechain",
+  "icon": "ethereum",
   "explorers": [],
   "parent": {
     "type": "L2",
@@ -9250,11 +9250,11 @@
     "standard": "EIP3091"
   }]
 }, {
-  "name": "Rinia Testnet",
+  "name": "Rinia",
+  "title": "Firechain Testnet Rinia",
   "chain": "FIRE",
-  "icon": "rinia",
-  "rpc": ["https://rinia-rpc1.thefirechain.com"],
-  "faucets": ["https://faucet.thefirechain.com"],
+  "rpc": ["https://rinia-rpc1.thefirechain.com", "https://rpc-rinia.firestation.io"],
+  "faucets": ["https://faucet.thefirechain.com", "https://faucet.firestation.io"],
   "nativeCurrency": {
     "name": "Firechain",
     "symbol": "FIRE",
@@ -9264,6 +9264,7 @@
   "shortName": "tfire",
   "chainId": 917,
   "networkId": 917,
+  "icon": "rinia",
   "slip44": 1,
   "explorers": [{
     "name": "FireScan",
@@ -17066,6 +17067,31 @@
     "standard": "EIP3091"
   }]
 }, {
+  "name": "BC Hyper Chain Mainnet",
+  "chain": "BC Hyper Chain",
+  "rpc": ["https://mainapi.bchscan.io"],
+  "features": [{
+    "name": "EIP155"
+  }, {
+    "name": "EIP1559"
+  }],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "VERSATIZE COIN",
+    "symbol": "VTCN",
+    "decimals": 18
+  },
+  "infoURL": "https://www.versatizecoin.com/",
+  "shortName": "BCHYPER",
+  "chainId": 3030,
+  "networkId": 3030,
+  "icon": "bchyper",
+  "explorers": [{
+    "name": "bcexplorer mainnet",
+    "url": "https://mainnet.bchscan.io",
+    "standard": "EIP3091"
+  }]
+}, {
   "name": "Orlando Chain",
   "chain": "ORL",
   "rpc": ["https://rpc-testnet.orlchain.com"],
@@ -18028,8 +18054,8 @@
   "name": "Firechain zkEVM Ghostrider",
   "title": "Firechain zkEVM Testnet",
   "chain": "Firechain",
-  "rpc": ["https://rpc-zkevm-ghostrider.thefirechain.com"],
-  "faucets": ["zkevm-faucet.thefirechain.com"],
+  "rpc": ["https://rpc-zkevm-ghostrider.thefirechain.com", "https://rpc-zkevm-ghostrider.firestation.io"],
+  "faucets": ["zkevm-faucet.thefirechain.com", "https://zkevm-faucet.firestation.io"],
   "nativeCurrency": {
     "name": "Ether",
     "symbol": "ETH",
@@ -18039,7 +18065,12 @@
   "shortName": "firechain-zkEVM-testnet",
   "chainId": 3885,
   "networkId": 3885,
-  "explorers": []
+  "icon": "ethereum",
+  "explorers": [{
+    "name": "FireScan",
+    "url": "https://ghostrider-zkevm.firescan.io",
+    "standard": "EIP3091"
+  }]
 }, {
   "name": "KalyChain Mainnet",
   "chain": "KLC",
@@ -25670,8 +25701,8 @@
     "standard": "EIP3091"
   }]
 }, {
-  "name": "Abstract Testnet",
-  "chain": "Abstract Testnet",
+  "name": "Abstract Sepolia Testnet",
+  "chain": "Abstract Sepolia Testnet",
   "rpc": ["https://api.testnet.abs.xyz"],
   "faucets": ["https://faucet.triangleplatform.com/abstract/testnet"],
   "chainId": 11124,
@@ -25691,9 +25722,9 @@
     }]
   },
   "explorers": [{
-    "name": "Abstract Block Explorer",
-    "url": "https://explorer.testnet.abs.xyz",
-    "standard": "none"
+    "name": "Abstract Sepolia Testnet Explorer",
+    "url": "https://sepolia.abscan.org",
+    "standard": "EIP3091"
   }]
 }, {
   "name": "Shine Chain",
@@ -39751,6 +39782,25 @@
     "standard": "none"
   }]
 }, {
+  "name": "Ternoa",
+  "chain": "Ternoa",
+  "rpc": ["https://rpc-mainnet.zkevm.ternoa.network"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "Capsule Coin",
+    "symbol": "CAPS",
+    "decimals": 18
+  },
+  "infoURL": "",
+  "shortName": "ternoa-mainnet",
+  "chainId": 752025,
+  "networkId": 7502025,
+  "explorers": [{
+    "name": "Tracehawk",
+    "url": "https://explorer-mainnet.zkevm.ternoa.network",
+    "standard": "none"
+  }]
+}, {
   "name": "PAYSCAN CHAIN",
   "chain": "PAYSCAN CHAIN",
   "rpc": ["https://rpc.payscan.live"],
@@ -45560,8 +45610,8 @@
   "networkId": 197710212030,
   "icon": "ntity",
   "explorers": [{
-    "name": "Ntity Explorer",
-    "url": "https://explorer.ntity.io/NTT",
+    "name": "Ntity Blockscout",
+    "url": "https://blockscout.ntity.io",
     "icon": "ntity",
     "standard": "EIP3091"
   }]
@@ -45582,8 +45632,8 @@
   "slip44": 1,
   "icon": "ntity",
   "explorers": [{
-    "name": "Ntity Haradev Explorer",
-    "url": "https://explorer.ntity.io/NTTH",
+    "name": "Ntity Haradev Blockscout",
+    "url": "https://blockscout.haradev.com",
     "icon": "ntity",
     "standard": "EIP3091"
   }]

@@ -15,8 +15,8 @@
   "icon": "ntity",
   "explorers": [
     {
-      "name": "Ntity Explorer",
-      "url": "https://explorer.ntity.io/NTT",
+      "name": "Ntity Blockscout",
+      "url": "https://blockscout.ntity.io",
       "icon": "ntity",
       "standard": "EIP3091"
     }
